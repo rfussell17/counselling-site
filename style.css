@@ -1,0 +1,234 @@
+
+/* Global styles - mobile first design */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #333;
+  padding: 0;
+  background-image: url("img/hero.jpg");
+  background-position: center;
+}
+
+
+/* Typography */
+h1, h2, p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.main-heading {
+  font-size: 3em;
+}
+
+ h2 {
+   font-size: 1em;
+   font-weight: 400;
+   margin: 0;
+ }
+
+ /* nav */
+
+ header {
+  margin: 0 auto;
+  padding: 1.5em;
+ }
+
+ .nav-list {
+  flex-direction: column;
+ }
+
+ .nav-item, .nav-title {
+  margin: 1em;
+  text-decoration: none;
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: 500;
+ }
+
+ .nav-title {
+   display: none;
+ }
+
+ .nav-item {
+  font-size: 1.2em;
+ }
+
+ .nav-item:hover,
+ .nav-item:active {
+   color: darkgray;
+   cursor: pointer;
+ }
+
+ .active {
+   font-weight: bold;
+   border-bottom: 1px solid;
+ }
+
+
+ /* layout */
+
+ .main-container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container header {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 15em;
+  font-size: .7em;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 2em;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.card:hover,
+.card:active {
+  background-color: #a5a58d;
+  cursor: pointer;
+} 
+
+.card-content {
+  display: none;
+}
+
+
+
+/* buttons */
+
+.btn, .back {
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+ .btn {
+   margin: 2em 0;
+   padding: 1em 2em;
+   font-size: 1.2em;
+ }
+
+ .back {
+  margin: 1em;
+  padding: .5em 1em;
+  font-size: 1em;
+ }
+
+ .btn:hover,
+ .btn:active,
+ .back:hover,
+ .back:active {
+   background-color: #b7b7a4;
+   cursor: pointer;
+ }
+
+ .btn a, .back a {
+   text-decoration: none;
+   color: #333;
+ }
+
+
+ /* desktop/mobile */
+
+
+ .desk {
+   display: none;
+ }
+
+ .mobile {
+   display: inline-block;
+ }
+
+
+ /* media queries desktop */
+
+
+ @media (min-width: 1000px) {
+
+  body{
+    height: 100vh;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+   }
+
+   .nav-title{
+    justify-content: center;
+    margin-right: auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    display: block;
+   }
+
+   .main-container {
+     min-height: 100vh;
+     background-color: #fff;
+     justify-content: center top;
+     align-items: center;
+     background-image: url("img/hero.jpg");
+     background-size: cover;
+     align-items: center;
+     background-position: 40% 100%;
+   }
+
+   .main-heading {
+    padding: 1em 0 0 0;
+    margin: .5em;
+   }
+
+   .card-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin: 0 auto;
+   }
+
+   .card {
+     padding: 2em;
+     margin: 1em;
+     border-radius: 2em;
+     background-color: #b7b7a4;
+     width: 15%;
+   }
+
+   .card:hover,
+   .card:active {
+     background-color: #a5a58d;
+     cursor: pointer;           
+   } 
+
+   .card-title {
+     margin-bottom: 1em;
+   }
+
+   .card-content {
+    display: block;
+  }
+
+   .desk {
+     display: inline-block;
+   }
+
+   .mobile {
+     display: none;
+   }
+ }
