@@ -1,4 +1,3 @@
-
 /* Global styles - mobile first design */
 
 * {
@@ -7,7 +6,7 @@
 
 body {
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #333;
   padding: 0;
@@ -15,9 +14,10 @@ body {
   background-position: center;
 }
 
-
 /* Typography */
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
   font-weight: 400;
 }
@@ -26,55 +26,55 @@ h1, h2, p {
   font-size: 1.7em;
 }
 
- h2 {
-   font-size: 1em;
-   font-weight: 400;
-   margin: 0;
- }
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
 
- /* nav */
+/* nav */
 
- header {
+header {
   margin: 0 auto;
   padding: 1.5em;
- }
+}
 
- .nav-list {
+.nav-list {
   flex-direction: column;
- }
+}
 
- .nav-item, .nav-title {
+.nav-item,
+.nav-title {
   margin: 1em;
   text-decoration: none;
   color: #333;
   line-height: 1.6;
   letter-spacing: 1px;
   font-weight: 500;
- }
+}
 
- .nav-title {
-   display: none;
- }
+.nav-title {
+  display: none;
+}
 
- .nav-item {
+.nav-item {
   font-size: 1.2em;
- }
+}
 
- .nav-item:hover,
- .nav-item:active {
-   color: darkgray;
-   cursor: pointer;
- }
+.nav-item:hover,
+.nav-item:active {
+  color: darkgray;
+  cursor: pointer;
+}
 
- .active {
-   font-weight: bold;
-   border-bottom: 1px solid;
- }
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
 
+/* layout */
 
- /* layout */
-
- .main-container {
+.main-container {
   margin: 0 auto;
   padding: 0;
 }
@@ -86,7 +86,7 @@ h1, h2, p {
 
 footer {
   margin-top: 15em;
-  font-size: .7em;
+  font-size: 0.7em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,70 +100,107 @@ footer {
   margin: 0 auto;
 }
 
-.card:hover,
-.card:active {
-  background-color: #a5a58d;
-  cursor: pointer;
-} 
-
 .card-content {
   display: none;
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.bio-image {
+  width: 100%;
+  margin: 1em auto;
+  border-radius: 5px;
+}
+
+.bio-left {
+  width: 45%;
+}
+
+.bio-right {
+  width: 80%;
+}
+
+.bio-text {
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin: 1em auto;
+}
+
+#contact-form {
+  display: flex;
+  margin-top: ;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin-left: 35%;
+}
+
+input,
+.btn {
+  margin-bottom: 1em;
+  border: 1px solid #404040;
+  border-radius: 0.4em;
+}
+
+input {
+  color: #404040;
+  font-weight: 300;
+  padding: 0.5em 2em;
+}
 
 /* buttons */
 
-.btn, .back {
+.btn,
+.back {
   letter-spacing: 1px;
   text-decoration: none;
   border-radius: 1em;
 }
 
- .btn {
-   margin: 2em 0;
-   padding: 1em 2em;
-   font-size: 1.2em;
- }
+.btn {
+  margin: 2em 0;
+  padding: 1em 2em;
+  font-size: 1.2em;
+}
 
- .back {
+.back {
   margin: 1em;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font-size: 1em;
- }
+}
 
- .btn:hover,
- .btn:active,
- .back:hover,
- .back:active {
-   background-color: #b7b7a4;
-   cursor: pointer;
- }
+.btn:hover,
+.btn:active,
+.back:hover,
+.back:active {
+  background-color: #b7b7a4;
+  cursor: pointer;
+}
 
- .btn a, .back a {
-   text-decoration: none;
-   color: #333;
- }
+.btn a,
+.back a {
+  text-decoration: none;
+  color: #333;
+}
 
+/* desktop/mobile */
 
- /* desktop/mobile */
+.desk {
+  display: none;
+}
 
+.mobile {
+  display: inline-block;
+}
 
- .desk {
-   display: none;
- }
+/* media queries desktop */
 
- .mobile {
-   display: inline-block;
- }
-
-
- /* media queries desktop */
-
-
- @media (min-width: 1000px) {
-
-  body{
+@media (min-width: 760px) {
+  body {
     height: 100vh;
     padding: 0;
   }
@@ -177,60 +214,83 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     padding: 0;
-   }
+  }
 
-   .nav-title{
+  .nav-title {
     justify-content: center;
     margin-right: auto;
     padding: 0;
     align-items: center;
     text-align: center;
     display: block;
-   }
+  }
 
-   .main-container {
-     height: 60vh;
-     background-color: #fff;
-     justify-content: center top; 
-      align-items: center;
-     background-image: url("img/hero.jpg");
-     background-size: cover;
-     background-position: 50% 69%;
+  .main-container {
+    height: 60vh;
+    background-color: #fff;
+    justify-content: center top;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-position: 50% 69%;
+  }
 
-   }
-
-   .main-heading {
+  .main-heading {
     padding: 1em 0 0 0;
+    margin: 0.5em;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: .7em;
     margin: .5em;
-   }
+    border-radius: 2em;
+    background-color: #b7b7a4;
+    width: 20%;
+  }
 
-   .card-container {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin: 0 auto;
-   }
+  .card-title {
+    margin-bottom: 1em;
+  }
 
-   .card {
-     padding: 2em;
-     margin: 1em;
-     border-radius: 2em;
-     background-color: #b7b7a4;
-     width: 15%;
-   }
-
-   .card:hover,
-   .card:active {
-     background-color: #a5a58d;
-     cursor: pointer;           
-   } 
-
-   .card-title {
-     margin-bottom: 1em;
-   }
-
-   .card-content {
+  .card-content {
     display: block;
+  }
+
+  .bio {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .bio-image {
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 5px;
+  }
+
+  .bio-left {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .bio-right {
+    display: flex;
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .bio-text {
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin: 1em auto;
+    width: 70%;
   }
 
   footer {
@@ -241,11 +301,53 @@ footer {
     margin: 15em auto 0 auto;
   }
 
-   .desk {
-     display: inline-block;
-   }
+  .desk {
+    display: none;
+    margin-bottom: 1em;
+  }
 
-   .mobile {
-     display: none;
-   }
- }
+  .mobile {
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .card {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+    background-color: #b7b7a4;
+    width: 25%;
+  }
+
+  .bio {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .bio-image {
+    width: 45%;
+    margin: 1em auto;
+  }
+
+
+  .card-title {
+    margin-bottom: 1em;
+  }
+
+  .card-content {
+    display: block;
+  }
+  
+    .desk {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+}
+
