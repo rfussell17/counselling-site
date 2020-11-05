@@ -23,7 +23,7 @@ h1, h2, p {
 }
 
 .main-heading {
-  font-size: 3em;
+  font-size: 1.7em;
 }
 
  h2 {
@@ -87,6 +87,10 @@ h1, h2, p {
 footer {
   margin-top: 15em;
   font-size: .7em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .card {
@@ -161,6 +165,11 @@ footer {
 
   body{
     height: 100vh;
+    padding: 0;
+  }
+
+  .main-heading {
+    font-size: 3em;
   }
 
   .nav-list {
@@ -180,14 +189,14 @@ footer {
    }
 
    .main-container {
-     min-height: 100vh;
+     height: 60vh;
      background-color: #fff;
-     justify-content: center top;
-     align-items: center;
+     justify-content: center top; 
+      align-items: center;
      background-image: url("img/hero.jpg");
      background-size: cover;
-     align-items: center;
-     background-position: 40% 100%;
+     background-position: 50% 69%;
+
    }
 
    .main-heading {
@@ -222,6 +231,14 @@ footer {
 
    .card-content {
     display: block;
+  }
+
+  footer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 15em auto 0 auto;
   }
 
    .desk {
