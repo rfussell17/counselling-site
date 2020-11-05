@@ -141,7 +141,7 @@ footer {
 
 input,
 .btn {
-  margin-bottom: 1em;
+  margin: 1em;
   border: 1px solid #404040;
   border-radius: 0.4em;
 }
@@ -293,6 +293,13 @@ input {
     width: 70%;
   }
 
+  input {
+    color: #404040;
+    font-weight: 300;
+    font-size: 1.1em;
+    padding: .5em 3em;
+  }
+
   footer {
     align-items: center;
     flex-direction: column;
@@ -316,10 +323,10 @@ input {
 
   .card {
     padding: 1em;
-    margin: 1em;
+    margin: 2em;
     border-radius: 2em;
     background-color: #b7b7a4;
-    width: 25%;
+    width: 20%;
   }
 
   .bio {
@@ -330,6 +337,10 @@ input {
   .bio-image {
     width: 45%;
     margin: 1em auto;
+  }
+
+  .bio-right {
+    margin-right: 5em;
   }
 
 
