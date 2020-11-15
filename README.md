@@ -55,7 +55,8 @@ The page was built mobile first, with a breakpoint for tablets and small laptops
 
 
 
-This is one of several website projects that I've been creating recently to get practice in between portfolio projects to keep sharp with the basics.
+This is one of several website projects that I've been creating recently to get practice in between portfolio projects to keep sharp with the basics of
+html/css and flexbox
 
 
 **Author**
